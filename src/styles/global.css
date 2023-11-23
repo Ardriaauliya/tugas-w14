@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Plus Jakarta Sans;
+    text-decoration: none;
   }
 
 /* Body website */
@@ -24,5 +25,7 @@ body{
   
     /* Kasih ke tengah flex */
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 120px;
+    overflow-x: hidden;
   }
