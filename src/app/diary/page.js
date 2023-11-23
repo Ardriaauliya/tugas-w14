@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import "@styles/diary.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -33,17 +33,24 @@ export default function Diary() {
   
     return (
       <div>
+        
+      </div>
+      <div>
         {isLoading ? (
           "Loading..."
         ) : judul.length > 0 ? (
           <ul>
             {judul.map((item, idx) => (
+              <Link href={`/diary/${item}/${isiDiary[idx]}`} style={{ textDecoration: 'none' }}>
+
               <li key={idx}>
+              
                 <div className="diary-container">
                   <h1>{judul[idx]}</h1>
                   <p className="p-diary">{isiDiary[idx]}</p>
                 </div>
               </li>
+              </Link>
             ))}
           </ul>
         ) : (
