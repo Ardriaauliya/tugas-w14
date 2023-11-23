@@ -47,7 +47,7 @@ export default function Home() {
             <div className="bio-nim-header-banner">
               {/* NIM dan BIO*/}
               <p>D121211001</p>
-              <p>Universitas Hasanuddin</p>
+              <p>Mahasiswa Universitas Hasanuddin</p>
             </div>
           </div>
         </div>
